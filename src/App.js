@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import img from './ugur-img.jpeg';
 import './App.css';
+import Date from './components/DateComponent';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="main">
+        <img className="ugur" src={img} alt="bonus-kafa"/>
+        <br/> <br/>
+        <h4><span>Uğur Türkmen</span>'in Akinon'dan ayrılmasına kalan süre: </h4>
+        <Date />
+        <a href="https://youtu.be/NntT0-dxI4Q?t=11" target="_blank">https://www.youtube.com/watch?v=NntT0-dxI4Q</a>
+      </div>
     </div>
   );
 }
