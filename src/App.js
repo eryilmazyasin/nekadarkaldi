@@ -1,16 +1,19 @@
-import img from './ugur-img.jpeg';
-import './App.css';
-import Date from './components/DateComponent';
+import React from 'react';
+import img from "./ugur-img.jpeg";
+import "./App.css";
+import MessagesList from './components/MessagesList';
+import AddMessages from './components/AddMessages';
+
 
 function App() {
   return (
     <div className="App">
-      <div className="main">
-        <img className="ugur" src={img} alt="bonus-kafa"/>
-        <br/> <br/>
-        <h4><span>Uğur Türkmen</span>'in Akinon'dan ayrılmasına kalan süre: </h4>
-        <Date />
-        <a href="https://youtu.be/NntT0-dxI4Q?t=11" target="_blank">https://www.youtube.com/watch?v=NntT0-dxI4Q</a>
+      <img className="ugur" src={img} alt="ugur-turkmen-bonus-kafa"/>
+      <div className="container my-5">
+      <h2 className="mb-4">Ona bir hatıra mesajı bırak...</h2>
+      <AddMessages />
+        
+      <MessagesList />
       </div>
     </div>
   );
