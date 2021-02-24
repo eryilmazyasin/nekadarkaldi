@@ -41,8 +41,8 @@ const MessagesList = () => {
           onChange={(e) => setSortBy(e.currentTarget.value)}
           className="form-select w-20 order-select btn btn-outline-info mb-3"
         >
-          <option value="LOVE_ASC">En çok kalp</option>
-          <option value="LOVE_DESC">En az kalp</option>
+          <option value="LOVE_DESC">En çok kalp</option>
+          <option value="LOVE_ASC">En az kalp</option>
         </select>
         <ul className="list-group fw-light w-100">
           {messages.map((message) => (

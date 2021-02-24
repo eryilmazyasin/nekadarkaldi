@@ -33,15 +33,15 @@ const AddMessages = () => {
     }
     return (
         <form onSubmit={onSubmit} className="row justify-content-center">
-            <div className="col-md-8">
+            <div className="col-md-8 mt-3">
                 <label htmlFor="" className="form-label text-left w-100 text-start">Mesaj</label>
                 <input type="text" className="form-control" onChange={messageOnChange} placeholder="Örn: Şimdi biz evsiz kalmış çocuklar gibiyiz..." required/>
             </div>
-            <div className="col-md-1"> 
+            <div className="col-md-1 mt-3"> 
                 <label htmlFor="" className="form-label text-start w-100">Sevgin</label>
                 <input type="number" className="form-control" onChange={loveOnChange} placeholder="100" required/>
             </div>
-            <button className="btn btn-light mt-3 w-50 mx-auto">Ekle</button>
+            <button className="btn btn-light mt-3 w-50 mx-auto">Gönder</button>
         </form>
     )
 }
